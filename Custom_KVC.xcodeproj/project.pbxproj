@@ -16,6 +16,8 @@
 		C56087BE2654FFC600E55900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56087BD2654FFC600E55900 /* main.m */; };
 		C56087C82654FFC600E55900 /* Custom_KVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C56087C72654FFC600E55900 /* Custom_KVCTests.m */; };
 		C56087D32654FFC600E55900 /* Custom_KVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C56087D22654FFC600E55900 /* Custom_KVCUITests.m */; };
+		C56087E22654FFDD00E55900 /* NSObject+CustomKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C56087E02654FFDD00E55900 /* NSObject+CustomKVC.m */; };
+		C56087E5265500E600E55900 /* LCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C56087E4265500E600E55900 /* LCPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		C56087CE2654FFC600E55900 /* Custom_KVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Custom_KVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56087D22654FFC600E55900 /* Custom_KVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Custom_KVCUITests.m; sourceTree = "<group>"; };
 		C56087D42654FFC600E55900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56087E02654FFDD00E55900 /* NSObject+CustomKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomKVC.m"; sourceTree = "<group>"; };
+		C56087E12654FFDD00E55900 /* NSObject+CustomKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomKVC.h"; sourceTree = "<group>"; };
+		C56087E3265500E600E55900 /* LCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPerson.h; sourceTree = "<group>"; };
+		C56087E4265500E600E55900 /* LCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +110,16 @@
 		C56087AA2654FFC500E55900 /* Custom_KVC */ = {
 			isa = PBXGroup;
 			children = (
+				C56087E12654FFDD00E55900 /* NSObject+CustomKVC.h */,
+				C56087E02654FFDD00E55900 /* NSObject+CustomKVC.m */,
 				C56087AB2654FFC500E55900 /* AppDelegate.h */,
 				C56087AC2654FFC500E55900 /* AppDelegate.m */,
 				C56087AE2654FFC500E55900 /* SceneDelegate.h */,
 				C56087AF2654FFC500E55900 /* SceneDelegate.m */,
 				C56087B12654FFC500E55900 /* ViewController.h */,
 				C56087B22654FFC500E55900 /* ViewController.m */,
+				C56087E3265500E600E55900 /* LCPerson.h */,
+				C56087E4265500E600E55900 /* LCPerson.m */,
 				C56087B42654FFC500E55900 /* Main.storyboard */,
 				C56087B72654FFC600E55900 /* Assets.xcassets */,
 				C56087B92654FFC600E55900 /* LaunchScreen.storyboard */,
@@ -268,8 +278,10 @@
 			files = (
 				C56087B32654FFC500E55900 /* ViewController.m in Sources */,
 				C56087AD2654FFC500E55900 /* AppDelegate.m in Sources */,
+				C56087E22654FFDD00E55900 /* NSObject+CustomKVC.m in Sources */,
 				C56087BE2654FFC600E55900 /* main.m in Sources */,
 				C56087B02654FFC500E55900 /* SceneDelegate.m in Sources */,
+				C56087E5265500E600E55900 /* LCPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,13 +455,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Custom_KVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chao.Custom-KVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,13 +473,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Custom_KVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chao.Custom-KVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

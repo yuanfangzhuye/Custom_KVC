@@ -6,6 +6,8 @@
 //
 
 #import "ViewController.h"
+#import "LCPerson.h"
+//#import "NSObject+CustomKVC.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    LCPerson *p = [LCPerson alloc];
+    [p setValue:@"lc" forKey:@"name"];
+    NSLog(@"自定义取值：%@", [p valueForKey:@"name"]);
 }
 
 
